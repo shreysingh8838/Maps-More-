@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment"
+    android:background="@color/design_default_color_on_primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report an Accident"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:textSize="20sp"
+                android:layout_marginVertical="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note: Your location must be atleast 20m from the place of incident."
+                android:textColor="@color/design_default_color_primary_variant"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/user_name"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/edit_bg"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:inputType="text"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:hint="Location Name"
+                />
+            <EditText
+                android:id="@+id/user_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:cursorVisible="true"
+                android:minHeight="100dp"
+                android:hint="Please explain your views"
+                android:background="@drawable/edit_bg"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:paddingStart="15dp"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:textSize="15sp"
+                android:gravity="top|left"/>
+
+            <EditText
+                android:id="@+id/user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:padding="10dp"
+                android:cursorVisible="true"
+                android:minHeight="50dp"
+                android:hint="Time of incident"
+                android:background="@drawable/edit_bg"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:inputType="time"
+                android:maxLength="5"
+                android:paddingStart="15dp"
+                android:textSize="15sp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note: Time must be in 24 hour format"
+                android:textColor="@color/design_default_color_primary_variant"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/user_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:padding="10dp"
+                    android:cursorVisible="true"
+                    android:minHeight="50dp"
+                    android:hint="Speed Limit"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@color/design_default_color_primary_variant"
+                    android:inputType="number"
+                    android:paddingStart="15dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Km/Hr"
+                    android:textColor="@color/design_default_color_primary_variant"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/design_default_color_on_primary"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/design_default_color_primary" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_feed_send"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="20dp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_main"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_baseline_segment" />
+
+    <RelativeLayout
+        android:id="@+id/linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_above="@id/linearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_bg"
+        android:elevation="40dp"
+        android:fadingEdgeLength="5dp"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/black"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginVertical="10dp"
+                android:text="Start"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/design_default_color_on_primary" />
+
+            <Button
+                android:id="@+id/btn_add_data"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="5dp"
+                android:text="Report"
+                android:textColor="@color/design_default_color_on_primary" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_text"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
