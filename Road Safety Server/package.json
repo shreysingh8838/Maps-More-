@@ -1,0 +1,15 @@
+{
+  "name": "roadsafety-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shrey Singh",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "nvm": "0.0.4"
+  }
+}
